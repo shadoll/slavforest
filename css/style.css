@@ -1234,3 +1234,8 @@ select:-webkit-autofill {
 .cnt_phone a{
 	color: #333;
 }
+
+.image.fit img {
+	width: 100%;
+	height: auto;
+}
