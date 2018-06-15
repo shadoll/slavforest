@@ -245,7 +245,6 @@ tuor:visited {
 
 .about_desc {
     display: flex;
-	flex-direction: row;
 	margin: 2rem 0;
 }
 .about_image{
@@ -476,6 +475,16 @@ div.carousel-inner .item img {
 	.spotlight .image::after {
 		content: '100%';
 	}
+	.spotlight .content {
+		width: 100%;
+		padding: 2em 4em 3em 4em;
+	}
+	.spotlight h3 {
+		text-align: center;
+	}
+	.about_desc {
+		flex-direction: column;
+	}
 }
 @media (min-width: 980px) {
 	.spotlight:nth-child(odd) {
@@ -494,6 +503,14 @@ div.carousel-inner .item img {
 	.spotlight .image::after {
 		content:'600x600';
 	}
+	.spotlight .content {
+		width: calc(100% - 600px);
+		max-width: 48em;
+		padding: 2em 4em 1em 4em;
+	}
+	.about_desc {
+		flex-direction: row;
+	}
 }
 .spotlight:nth-child(odd) {
 	background-color: rgba(0, 0, 0, 0.225);
@@ -503,10 +520,7 @@ div.carousel-inner .item img {
 }
 
 .spotlight .content {
-    padding: 2em 4em 1em 4em;
     order: 2;
-    max-width: 48em;
-	width: calc(100% - 600px);
 }
 .spotlight .image {
 	position: relative;
