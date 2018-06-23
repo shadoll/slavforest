@@ -153,7 +153,7 @@ p {
     width: 150px;
 }
 .home_text{
-    text-align: left;
+    text-align: center;
 }
 .home-iphone{
     text-align: right;
@@ -218,7 +218,6 @@ p {
 tuor:active,
 tuor:visited {
     color: #A9ADB0;
-    margin-left: 20px;
     text-transform: uppercase;
     font-size: 19px;
     font-weight: 500;
@@ -1202,6 +1201,7 @@ select:-webkit-autofill {
 
 .navbar-default{
 	border-color: transparent;
+	text-transform: uppercase;
 }
 
 .navbar-fixed-top{
@@ -1237,5 +1237,18 @@ select:-webkit-autofill {
 
 .image.fit img {
 	width: 100%;
-	height: auto;
+	/* height: auto; */
+	object-fit: cover;
+}
+
+.language {
+    position: absolute;
+    right: 2rem;
+	top: 1rem;
+	color: #fff;
+    font-weight: 800;
+}
+.language a{
+	color: #bbb;
+	font-weight: 500;
 }
