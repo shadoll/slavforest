@@ -471,9 +471,9 @@ div.carousel-inner .item img {
 		width: 100%;
 		height: auto;
 	}
-	.spotlight .image::after {
+	/* .spotlight .image::after {
 		content: '100%';
-	}
+	} */
 	.spotlight .content {
 		width: 100%;
 		padding: 2em 4em 3em 4em;
