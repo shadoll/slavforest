@@ -499,9 +499,9 @@ div.carousel-inner .item img {
 		width: 600px;
 		height: 600px;
 	}
-	.spotlight .image::after {
+	/* .spotlight .image::after {
 		content:'600x600';
-	}
+	} */
 	.spotlight .content {
 		width: calc(100% - 600px);
 		max-width: 48em;
@@ -533,10 +533,10 @@ div.carousel-inner .item img {
 .spotlight .image img {
     border-radius: 0;
 }
-.spotlight .image:hover::after{
+/* .spotlight .image:hover::after{
 	display: none;
-}
-.spotlight .image::after {
+} */
+/* .spotlight .image::after {
     position: absolute;
     top: 0;
     height: 100%;
@@ -548,7 +548,7 @@ div.carousel-inner .item img {
     color: rgba(0, 0, 0, 0.7);
     align-items: center;
     justify-content: center;
-}
+} */
 .number {
     font-size: 30px;
     font-weight: 300;
@@ -1251,4 +1251,14 @@ select:-webkit-autofill {
 .language a{
 	color: #bbb;
 	font-weight: 500;
+}
+.section_image img {
+    max-width: 100%;
+    height: 160px;
+}
+
+.section_image {
+    width: 100%;
+    display:flex;
+    justify-content: center
 }
