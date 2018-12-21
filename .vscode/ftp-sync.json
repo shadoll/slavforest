@@ -1,5 +1,5 @@
 {
-    "remotePath": "./",
+    "remotePath": "./slavforest.com.ua",
     "host": "uvh12.mirohost.net",
     "username": "slavforest",
     "password": "cAAed7MU",
@@ -14,7 +14,8 @@
     "ignore": [
         "\\.vscode",
         "\\.git",
-        "\\.DS_Store"
+		"\\.DS_Store",
+		"\\.db"
     ],
     "generatedFiles": {
         "uploadOnSave": false,

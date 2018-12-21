@@ -1,0 +1,15 @@
+{
+  "short_name": "SlavForest",
+  "name": "SlavForest - Production of High-Quality Timber Products",
+  "icons": [
+    {
+      "src": "images/logo_w.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#a9773a",
+  "theme_color": "#a9773a",
+  "display": "standalone"
+}

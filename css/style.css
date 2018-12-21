@@ -142,6 +142,7 @@ p {
     background: url(../images/home.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
+	background-color: #a9773a;
 }
 .header .section_overlay {
     background-color: rgba(33, 33, 33, .75);

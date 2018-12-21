@@ -1,3 +1,19 @@
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+		navigator.serviceWorker.register('/sw.js', { scope: './' })
+		.then(function(registration) {
+			console.log('ServiceWorker registration successful with scope: ', registration.scope);
+		})
+		.catch(function(whut) {
+			console.error('error... ');
+			console.error(whut);
+		});
+		window.addEventListener('beforeinstallprompt', function(e) {
+			console.log('beforeinstallprompt Event fired');
+		});
+	});
+}
+
 //LOADER/SPINNER
 $(window).bind("load", function() {
 
@@ -257,10 +273,10 @@ $(document).ready(function() {
         }
         if (name && emaild && message) {
             $.ajax({
-                url: 'contact.php',
+                url: 'contactengine.php',
                 data: {
                     name: name,
-                    emaild: emaild,
+                    email: emaild,
                     subject: subject,
                     message: message
                 },

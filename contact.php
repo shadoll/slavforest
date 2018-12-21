@@ -6,7 +6,7 @@
 
 
 //E-mail address. Enter your email
-define("__TO__", "youremail@domain.com");
+define("__TO__", "sha@shadoll.work");
 
 //Success message
 define('__SUCCESS_MESSAGE__', "Your message has been sent. We will reply soon. Thank you!");
@@ -41,11 +41,11 @@ function send_mail($to,$subject,$message,$headers){
 }
 
 //Get data form and send mail
-if(isset($_POST['name']) and isset($_POST['mail']) and isset($_POST['messageForm'])){
+if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])){
     $name = $_POST['name'];
-    $mail = $_POST['mail'];
-    $subjectForm = $_POST['subjectForm'];
-    $messageForm = $_POST['messageForm'];
+    $mail = $_POST['email'];
+    $subjectForm = $_POST['subject'];
+    $messageForm = $_POST['message'];
 
     if($name == '') {
         echo json_encode(array('info' => 'error', 'msg' => "Please enter your name."));
@@ -96,4 +96,3 @@ if(isset($_POST['name']) and isset($_POST['mail']) and isset($_POST['messageForm
 } else {
     echo json_encode(array('info' => 'error', 'msg' => __MESSAGE_EMPTY_FIELDS__));
 }
- ?>
