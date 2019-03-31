@@ -767,10 +767,22 @@ div.carousel-inner .item img {
    SECTION DOWNLOAD
 -----------------------------------------*/
 
-.download {
+.cert {
     background: #f1f1f1;
 }
-.download_screen img {
+.cert_screen .cert1 {
+    z-index:11
+}
+.cert_screen .cert2 {
+    left: 200px;
+    z-index: 10
+}
+.cert_screen .cert1 img,
+.cert_screen .cert2 img {
+    width: auto;
+    height: 490px;
+}
+.cert_screen a {
     width: 500px;
     position: absolute;
     bottom: -240px;
