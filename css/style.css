@@ -788,6 +788,9 @@ div.carousel-inner .item img {
     bottom: -240px;
     left: 0;
 }
+.cert .section_title p {
+    overflow-wrap: break-word;
+}
 .available_store {
     background-image: url("../images/fsc.png");
     background-color: #539b00;
