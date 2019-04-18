@@ -771,23 +771,45 @@ div.carousel-inner .item img {
     background: #f1f1f1;
 }
 .cert_screen .cert1 {
-    z-index:11
+    z-index: 11;
+    width: 500px;
+    position: absolute;
+    bottom: -240px;
+    left: 0;
 }
 .cert_screen .cert2 {
+    width: 500px;
+    position: absolute;
+    bottom: -240px;
     left: 200px;
-    z-index: 10
+    z-index: 10;
 }
 .cert_screen .cert1 img,
 .cert_screen .cert2 img {
     width: auto;
     height: 490px;
 }
-.cert_screen a {
-    width: 500px;
-    position: absolute;
-    bottom: -240px;
-    left: 0;
+@media (max-width: 767px) {
+    .cert_screen {
+        margin: 0 -30px;
+    }
+    .cert_screen a {
+        width: auto !important;
+    }
+    .cert_screen .cert1 {
+        left: 0;
+    }
+    .cert_screen .cert2 {
+        right: 0;
+        left: auto;
+    }
+    .cert_screen .cert1 img,
+    .cert_screen .czert2 img {
+        width: auto;
+        height: 400px;
+    }
 }
+
 .cert .section_title p {
     overflow-wrap: break-word;
 }
