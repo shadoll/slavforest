@@ -1,8 +1,0 @@
-{
-    "name": "shadoll/slavforest",
-    "description": "Slav forest site",
-    "require": {
-        "vlucas/phpdotenv": "^3.6",
-        "phpmailer/phpmailer": "^6.1"
-    }
-}
