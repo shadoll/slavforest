@@ -1261,6 +1261,9 @@ select:-webkit-autofill {
 #map {
     height: 400px;
 }
+.map {
+    margin-top: -12rem; /* hide form service bottom */
+}
 
 .cnt_email,
 .cnt_phone {
